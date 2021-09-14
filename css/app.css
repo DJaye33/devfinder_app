@@ -25,6 +25,26 @@ html {
 
 body {
   font-family: "Space Mono", monospace;
+  background-color: var(--light-grayish-blue);
+  padding: 3.1rem 2.4rem 7.9rem;
   min-height: 100vh; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .header__theme {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7.8rem; }
+  .header__dark {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.9rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--mid-blue); }
 
 /*# sourceMappingURL=app.css.map */

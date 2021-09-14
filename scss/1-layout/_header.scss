@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__theme {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 7.8rem;
+  }
+
+  &__dark {
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 1.9rem;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    color: var(--mid-blue);
+  }
+}
