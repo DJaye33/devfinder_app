@@ -10,6 +10,14 @@
     justify-content: space-between;
     align-items: center;
     width: 7.8rem;
+
+    &:hover > .header__dark {
+      color: var(--dark-blue);
+    }
+
+    &:hover > .header__moon path {
+      fill: var(--dark-blue);
+    }
   }
 
   &__dark {
@@ -19,5 +27,12 @@
     letter-spacing: 0.25rem;
     text-transform: uppercase;
     color: var(--mid-blue);
+    transition: color 0.2s ease-in;
+  }
+
+  &__moon {
+    & path {
+      transition: fill 0.2s ease-in;
+    }
   }
 }

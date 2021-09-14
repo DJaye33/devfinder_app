@@ -50,12 +50,19 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 7.8rem; }
+    .header__theme:hover > .header__dark {
+      color: var(--dark-blue); }
+    .header__theme:hover > .header__moon path {
+      fill: var(--dark-blue); }
   .header__dark {
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.9rem;
     letter-spacing: 0.25rem;
     text-transform: uppercase;
-    color: var(--mid-blue); }
+    color: var(--mid-blue);
+    transition: color 0.2s ease-in; }
+  .header__moon path {
+    transition: fill 0.2s ease-in; }
 
 /*# sourceMappingURL=app.css.map */
