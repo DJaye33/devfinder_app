@@ -38,7 +38,7 @@ body {
   background-color: var(--light-grayish-blue);
   padding: 3.1rem 2.4rem 7.9rem;
   min-height: 100vh;
-  transition: padding 0.3s ease-out;
+  transition: all 0.3s ease-out;
 
   @media screen and (min-width: 670px) {
     padding: 14.4rem 9.7rem 23.6rem;
