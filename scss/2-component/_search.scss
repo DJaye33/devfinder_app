@@ -55,6 +55,11 @@
         background-color: var(--primary-blue);
         border-radius: 1rem;
         border: none;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          background-color: var(--btn-hover);
+        }
       }
     }
   }

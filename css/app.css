@@ -10,6 +10,7 @@
 
 :root {
   --primary-blue: #0079ff;
+  --btn-hover: #60abff;
   --bluish-gray: #697c9a;
   --mid-blue: #4b6a9b;
   --dark-blue: #2b3442;
@@ -132,6 +133,9 @@ body {
       color: var(--white);
       background-color: var(--primary-blue);
       border-radius: 1rem;
-      border: none; }
+      border: none;
+      transition: all 0.2s ease-out; }
+      .search__bar .search__error-btn .search__btn:hover {
+        background-color: var(--btn-hover); }
 
 /*# sourceMappingURL=app.css.map */
