@@ -90,4 +90,48 @@ body {
   .header__sun g {
     transition: fill 0.2s ease-in; }
 
+.search {
+  margin-top: 3.6rem;
+  background-color: var(--whitish);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 1.5rem;
+  padding: 0.6rem 0.7rem 0.7rem 1.6rem; }
+  .search__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .search__bar-left {
+      display: flex;
+      align-items: center;
+      width: 60%; }
+      .search__bar-left .search__input {
+        font-family: inherit;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        color: var(--dark-blue);
+        border: none;
+        width: 100%;
+        outline-color: var(--bluish-gray);
+        margin-left: 1rem; }
+        .search__bar-left .search__input::placeholder {
+          color: var(--mid-blue); }
+        @media screen and (min-width: 670px) {
+          .search__bar-left .search__input {
+            font-size: 1.8rem; } }
+    .search__bar .search__error-btn .search__error--active {
+      display: none; }
+    .search__bar .search__error-btn .search__btn {
+      cursor: pointer;
+      font-family: inherit;
+      font-weight: bold;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      text-align: center;
+      width: 8.4rem;
+      padding: 1.8rem;
+      color: var(--white);
+      background-color: var(--primary-blue);
+      border-radius: 1rem;
+      border: none; }
+
 /*# sourceMappingURL=app.css.map */

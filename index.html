@@ -15,6 +15,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- Header Start -->
       <header class="header">
         <h1 class="header__heading">devfinder</h1>
         <div class="header__theme">
@@ -48,6 +49,23 @@
           </svg>
         </div>
       </header>
+      <!-- Header End -->
+
+      <!-- Search Start -->
+      <form class="search">
+        <div class="search__bar">
+          <div class="search__bar-left">
+            <img src="/assets/icon-search.svg" alt="" />
+            <label for="input"></label>
+            <input type="text" id="input" class="search__input" placeholder="Search Github user..." />
+          </div>
+          <div class="search__error-btn">
+            <span class="search__error search__error--active">No results</span>
+            <button class="search__btn">Search</button>
+          </div>
+        </div>
+      </form>
+      <!-- Search End -->
     </div>
     <script src="scripts/app.js"></script>
   </body>
