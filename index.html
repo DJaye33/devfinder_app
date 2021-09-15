@@ -57,7 +57,12 @@
           <div class="search__bar-left">
             <img src="/assets/icon-search.svg" alt="" />
             <label for="input"></label>
-            <input type="text" id="input" class="search__input" placeholder="Search Github user..." />
+            <input
+              type="text"
+              id="input"
+              class="search__input"
+              placeholder="Github username..."
+            />
           </div>
           <div class="search__error-btn">
             <span class="search__error search__error--active">No results</span>
@@ -66,6 +71,22 @@
         </div>
       </form>
       <!-- Search End -->
+
+      <!-- Info Start -->
+      <section class="info">
+        <header class="info__header">
+          <img class="info__avatar" src="https://picsum.photos/70/70" alt="" />
+          <div class="info__user-info">
+            <div class="info__user">
+              <h2 class="info__username">The Octocat</h2>
+              <a href="#" class="info__user-handle">@aoctocat</a>
+            </div>
+            <span class="info__joined">Joined 25 Jan 2011</span>
+          </div>
+        </header>
+      </section>
+
+      <!-- Info End -->
     </div>
     <script src="scripts/app.js"></script>
   </body>

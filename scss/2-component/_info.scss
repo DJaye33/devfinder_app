@@ -1,0 +1,40 @@
+.info {
+  margin-top: 1.6rem;
+  background-color: var(--whitish);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 1.5rem;
+  padding: 3.2rem 2.4rem;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.3rem;
+
+    .info__avatar {
+      border-radius: 50%;
+      margin-right: 1.9rem;
+    }
+
+    .info__user-info {
+      .info__joined {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        color: var(--bluish-gray);
+      }
+      .info__user {
+        margin-bottom: 0.6rem;
+        .info__username {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          color: var(--dark-blue);
+        }
+
+        .info__user-handle {
+          font-size: 1.3rem;
+          line-height: 1.9rem;
+          color: var(--primary-blue);
+        }
+      }
+    }
+  }
+}

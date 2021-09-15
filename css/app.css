@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -148,5 +154,33 @@ body {
           width: 10.6rem; } }
       .search__bar .search__error-btn .search__btn:hover {
         background-color: var(--btn-hover); }
+
+.info {
+  margin-top: 1.6rem;
+  background-color: var(--whitish);
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  border-radius: 1.5rem;
+  padding: 3.2rem 2.4rem; }
+  .info__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.3rem; }
+    .info__header .info__avatar {
+      border-radius: 50%;
+      margin-right: 1.9rem; }
+    .info__header .info__user-info .info__joined {
+      font-size: 1.3rem;
+      line-height: 1.9rem;
+      color: var(--bluish-gray); }
+    .info__header .info__user-info .info__user {
+      margin-bottom: 0.6rem; }
+      .info__header .info__user-info .info__user .info__username {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: var(--dark-blue); }
+      .info__header .info__user-info .info__user .info__user-handle {
+        font-size: 1.3rem;
+        line-height: 1.9rem;
+        color: var(--primary-blue); }
 
 /*# sourceMappingURL=app.css.map */
