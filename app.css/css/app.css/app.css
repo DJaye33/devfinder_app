@@ -170,27 +170,19 @@ body {
       margin-right: 1.9rem; }
     @media screen and (min-width: 730px) {
       .info__header .info__user-info {
-        display: flex;
-        justify-content: space-between;
-        width: 100%; } }
+        background-color: purple;
+        display: flex; } }
     .info__header .info__user-info .info__joined {
+      background-color: red;
       font-size: 1.3rem;
       line-height: 1.9rem;
       color: var(--bluish-gray); }
-      @media screen and (min-width: 630px) {
-        .info__header .info__user-info .info__joined {
-          font-size: 1.5rem;
-          line-height: 2.2rem; } }
     .info__header .info__user-info .info__user {
       margin-bottom: 0.6rem; }
       .info__header .info__user-info .info__user .info__username {
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: var(--dark-blue); }
-        @media screen and (min-width: 670px) {
-          .info__header .info__user-info .info__user .info__username {
-            font-size: 2.6rem;
-            line-height: 3.9rem; } }
       .info__header .info__user-info .info__user .info__user-handle {
         font-size: 1.3rem;
         line-height: 1.9rem;
