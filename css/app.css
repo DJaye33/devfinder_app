@@ -161,6 +161,9 @@ body {
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 1.5rem;
   padding: 3.2rem 2.4rem; }
+  .info--dark {
+    background-color: var(--navy-blue);
+    box-shadow: none; }
   .info__header {
     display: flex;
     align-items: center;
@@ -177,6 +180,8 @@ body {
       font-size: 1.3rem;
       line-height: 1.9rem;
       color: var(--bluish-gray); }
+      .info__header .info__user-info .info__joined--dark {
+        color: var(--white); }
       @media screen and (min-width: 630px) {
         .info__header .info__user-info .info__joined {
           font-size: 1.5rem;
@@ -187,6 +192,8 @@ body {
         font-size: 1.6rem;
         line-height: 2.4rem;
         color: var(--dark-blue); }
+        .info__header .info__user-info .info__user .info__username--dark {
+          color: var(--white); }
         @media screen and (min-width: 670px) {
           .info__header .info__user-info .info__user .info__username {
             font-size: 2.6rem;
