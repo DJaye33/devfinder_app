@@ -5,6 +5,10 @@
   border-radius: 1.5rem;
   padding: 3.2rem 2.4rem;
 
+  @media screen and (min-width: 768px) {
+    padding: 4rem;
+  }
+
   &--dark {
     background-color: var(--navy-blue);
     box-shadow: none;
@@ -21,7 +25,7 @@
     }
 
     .info__user-info {
-      @media screen and (min-width: 730px) {
+      @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -36,7 +40,7 @@
           color: var(--white);
         }
 
-        @media screen and (min-width: 630px) {
+        @media screen and (min-width: 768px) {
           font-size: 1.5rem;
           line-height: 2.2rem;
         }
@@ -52,7 +56,7 @@
             color: var(--white);
           }
 
-          @media screen and (min-width: 670px) {
+          @media screen and (min-width: 768px) {
             font-size: 2.6rem;
             line-height: 3.9rem;
           }

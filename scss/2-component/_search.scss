@@ -43,7 +43,7 @@
           color: var(--white);
         }
 
-        @media screen and (min-width: 670px) {
+        @media screen and (min-width: 768px) {
           font-size: 1.8rem;
         }
       }
@@ -71,7 +71,7 @@
         border: none;
         transition: all 0.2s ease-out;
 
-        @media screen and (min-width: 670px) {
+        @media screen and (min-width: 768px) {
           width: 10.6rem;
         }
 

@@ -41,7 +41,7 @@ body {
   min-height: 100vh;
   transition: all 0.3s ease-out;
 
-  @media screen and (min-width: 670px) {
+  @media screen and (min-width: 768px) {
     padding: 14.4rem 9.7rem 23.6rem;
   }
 }
