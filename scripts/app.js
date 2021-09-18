@@ -13,8 +13,13 @@ const infoTitles = document.querySelectorAll(".info__titles");
 const infoResults = document.querySelectorAll(".info__results");
 const infoIcons = document.querySelectorAll(".info__icon");
 const infoLinks = document.querySelectorAll(".info__links");
+const avatar = document.querySelector(".info__avatar");
+const userHandle = document.querySelector(".info__user-handle");
 
 let isDarkTheme = false;
+console.log(avatar);
+
+console.log(new Date("2011-01-25T18:44:36Z").toDateString());
 
 // add/remove dark theme user stats section
 const statsDarkTheme = (elements, infoClass) => {
@@ -28,6 +33,36 @@ const statsDarkTheme = (elements, infoClass) => {
     });
   }
 };
+
+// Returns fetch results for header of summary section
+const retrieveUserInfo = (info) => {
+  avatar.setAttribute(`src`, `${info.avatar_url}`);
+  infoUsername.textContent = `${info.name}`;
+  userHandle.setAttribute(`href`, `${info.html_url}`);
+  userHandle.textContent = `@${info.login}`;
+
+  infoJoined.textContent = `Joined ${new Date(
+    `${info.created_at}`
+  ).toDateString()}`;
+};
+
+searchForm.addEventListener("submit", (evt) => {
+  evt.preventDefault();
+
+  const API = `https://api.github.com/users/${searchInput.value}`;
+
+  fetch(API, {
+    method: "GET",
+    headers: {
+      Accept: "application/vnd.github.v3+json",
+    },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      retrieveUserInfo(data);
+    });
+});
 
 setDarkTheme.addEventListener("click", (evt) => {
   isDarkTheme = !isDarkTheme;
