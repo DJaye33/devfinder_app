@@ -164,6 +164,9 @@ body {
   @media screen and (min-width: 768px) {
     .info {
       padding: 4rem; } }
+  @media screen and (min-width: 924px) {
+    .info {
+      padding: 4.8rem; } }
   .info--dark {
     background-color: var(--navy-blue);
     box-shadow: none; }
@@ -171,14 +174,25 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 3.3rem; }
+    @media screen and (min-width: 768px) {
+      .info__header {
+        margin-bottom: 2.4rem; } }
+    @media screen and (min-width: 924px) {
+      .info__header {
+        align-items: initial;
+        margin-bottom: initial; } }
     .info__header .info__avatar {
       border-radius: 50%;
       margin-right: 1.9rem; }
-    @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
+        .info__header .info__avatar {
+          margin-right: 3.7rem;
+          width: 11.7rem; } }
+    @media screen and (min-width: 924px) {
       .info__header .info__user-info {
         display: flex;
         justify-content: space-between;
-        width: 100%; } }
+        width: 48rem; } }
     .info__header .info__user-info .info__joined {
       font-size: 1.3rem;
       line-height: 1.9rem;
@@ -201,6 +215,9 @@ body {
           .info__header .info__user-info .info__user .info__username {
             font-size: 2.6rem;
             line-height: 3.9rem; } }
+        @media screen and (min-width: 924px) {
+          .info__header .info__user-info .info__user .info__username {
+            margin-bottom: 0.4rem; } }
       .info__header .info__user-info .info__user .info__user-handle {
         font-size: 1.3rem;
         line-height: 1.9rem;
@@ -210,6 +227,10 @@ body {
             font-size: 1.6rem;
             line-height: 2.4rem; } }
 
+@media screen and (min-width: 924px) {
+  .info__summary {
+    margin-left: auto;
+    width: 48rem; } }
 .info__summary .info__text {
   font-size: 1.3rem;
   line-height: 2.5rem;
@@ -218,7 +239,8 @@ body {
   @media screen and (min-width: 768px) {
     .info__summary .info__text {
       font-size: 1.5rem;
-      line-height: 2.5rem; } }
+      line-height: 2.5rem;
+      margin-bottom: 3.2rem; } }
 .info__summary .info__stats {
   background-color: var(--light-grayish-blue);
   border-radius: 1rem;
@@ -248,18 +270,23 @@ body {
     .info__summary .info__results {
       font-size: 2.2rem;
       line-height: 3.3rem; } }
-.info__summary .info__connect {
+@media screen and (min-width: 924px) {
+  .info__summary .info__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6.2rem; } }
+.info__summary .info__contact .info__connect {
   display: flex;
   align-items: center;
   margin-bottom: 1.6rem; }
-.info__summary .info__icons {
+.info__summary .info__contact .info__icons {
   margin-right: 1.3rem; }
-.info__summary .info__links {
+.info__summary .info__contact .info__links {
   font-size: 1.3rem;
   line-height: 1.9rem;
   color: var(--mid-blue); }
   @media screen and (min-width: 768px) {
-    .info__summary .info__links {
+    .info__summary .info__contact .info__links {
       font-size: 1.5rem;
       line-height: 2.2rem; } }
 

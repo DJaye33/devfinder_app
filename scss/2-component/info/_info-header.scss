@@ -9,6 +9,10 @@
     padding: 4rem;
   }
 
+  @media screen and (min-width: 924px) {
+    padding: 4.8rem;
+  }
+
   &--dark {
     background-color: var(--navy-blue);
     box-shadow: none;
@@ -19,16 +23,31 @@
     align-items: center;
     margin-bottom: 3.3rem;
 
+    @media screen and (min-width: 768px) {
+      margin-bottom: 2.4rem;
+    }
+
+    @media screen and (min-width: 924px) {
+      align-items: initial;
+      margin-bottom: initial;
+    }
+
     .info__avatar {
       border-radius: 50%;
       margin-right: 1.9rem;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 3.7rem;
+        width: 11.7rem;
+      }
     }
 
     .info__user-info {
-      @media screen and (min-width: 768px) {
+      @media screen and (min-width: 924px) {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 48rem;
+        // width: 100%;
       }
 
       .info__joined {
@@ -59,6 +78,10 @@
           @media screen and (min-width: 768px) {
             font-size: 2.6rem;
             line-height: 3.9rem;
+          }
+
+          @media screen and (min-width: 924px) {
+            margin-bottom: 0.4rem;
           }
         }
 
