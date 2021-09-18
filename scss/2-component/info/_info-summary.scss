@@ -10,6 +10,10 @@
     color: var(--mid-blue);
     margin-bottom: 2.3rem;
 
+    &--dark {
+      color: var(--white);
+    }
+
     @media screen and (min-width: 768px) {
       font-size: 1.5rem;
       line-height: 2.5rem;
@@ -25,23 +29,25 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.4rem;
-    // max-width: 48rem;
+
+    &--dark {
+      background-color: var(--very-dark-blue);
+    }
 
     @media screen and (min-width: 768px) {
       padding: 1.8rem 3.2rem;
     }
   }
 
-  //   .info__repos,
-  //   .info__followers,
-  //   .info__following {
-  //   }
-
   .info__titles {
     font-size: 1.1rem;
     line-height: 1.6rem;
     text-align: center;
     color: var(--mid-blue);
+
+    &--dark {
+      color: var(--white);
+    }
 
     @media screen and (min-width: 768px) {
       font-size: 1.3rem;
@@ -54,6 +60,10 @@
     font-size: 1.6rem;
     line-height: 2.4rem;
     color: var(--very-dark-blue);
+
+    &--dark {
+      color: var(--white);
+    }
 
     @media screen and (min-width: 768px) {
       font-size: 2.2rem;
@@ -79,10 +89,20 @@
       margin-right: 1.3rem;
     }
 
+    .info__icon {
+      &--dark {
+        fill: var(--white);
+      }
+    }
+
     .info__links {
       font-size: 1.3rem;
       line-height: 1.9rem;
       color: var(--mid-blue);
+
+      &--dark {
+        color: var(--white);
+      }
 
       @media screen and (min-width: 768px) {
         font-size: 1.5rem;

@@ -236,6 +236,8 @@ body {
   line-height: 2.5rem;
   color: var(--mid-blue);
   margin-bottom: 2.3rem; }
+  .info__summary .info__text--dark {
+    color: var(--white); }
   @media screen and (min-width: 768px) {
     .info__summary .info__text {
       font-size: 1.5rem;
@@ -249,6 +251,8 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2.4rem; }
+  .info__summary .info__stats--dark {
+    background-color: var(--very-dark-blue); }
   @media screen and (min-width: 768px) {
     .info__summary .info__stats {
       padding: 1.8rem 3.2rem; } }
@@ -257,6 +261,8 @@ body {
   line-height: 1.6rem;
   text-align: center;
   color: var(--mid-blue); }
+  .info__summary .info__titles--dark {
+    color: var(--white); }
   @media screen and (min-width: 768px) {
     .info__summary .info__titles {
       font-size: 1.3rem;
@@ -266,6 +272,8 @@ body {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: var(--very-dark-blue); }
+  .info__summary .info__results--dark {
+    color: var(--white); }
   @media screen and (min-width: 768px) {
     .info__summary .info__results {
       font-size: 2.2rem;
@@ -281,10 +289,14 @@ body {
   margin-bottom: 1.6rem; }
 .info__summary .info__contact .info__icons {
   margin-right: 1.3rem; }
+.info__summary .info__contact .info__icon--dark {
+  fill: var(--white); }
 .info__summary .info__contact .info__links {
   font-size: 1.3rem;
   line-height: 1.9rem;
   color: var(--mid-blue); }
+  .info__summary .info__contact .info__links--dark {
+    color: var(--white); }
   @media screen and (min-width: 768px) {
     .info__summary .info__contact .info__links {
       font-size: 1.5rem;
