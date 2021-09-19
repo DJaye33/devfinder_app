@@ -183,10 +183,12 @@ body {
         margin-bottom: initial; } }
     .info__header .info__avatar {
       border-radius: 50%;
-      margin-right: 1.9rem; }
+      margin-right: 1.9rem;
+      width: 7rem; }
       @media screen and (min-width: 768px) {
         .info__header .info__avatar {
           margin-right: 3.7rem;
+          height: auto;
           width: 11.7rem; } }
     @media screen and (min-width: 924px) {
       .info__header .info__user-info {
@@ -222,7 +224,7 @@ body {
         font-size: 1.3rem;
         line-height: 1.9rem;
         color: var(--primary-blue); }
-        @media screen and (min-width: 670px) {
+        @media screen and (min-width: 768px) {
           .info__header .info__user-info .info__user .info__user-handle {
             font-size: 1.6rem;
             line-height: 2.4rem; } }

@@ -19,7 +19,7 @@ const userHandle = document.querySelector(".info__user-handle");
 let isDarkTheme = false;
 console.log(avatar);
 
-console.log(new Date("2011-01-25T18:44:36Z").toDateString());
+console.log(new Date("2011-01-25T18:44:36Z").getFullYear());
 
 // add/remove dark theme user stats section
 const statsDarkTheme = (elements, infoClass) => {
@@ -34,16 +34,40 @@ const statsDarkTheme = (elements, infoClass) => {
   }
 };
 
+// converts numbericl month representation to readable Abbr.
+const convertMonth = (month) => {
+  const months = {
+    0: "Jan",
+    1: "Feb",
+    2: "Mar",
+    3: "Apr",
+    4: "May",
+    5: "Jun",
+    6: "Jul",
+    7: "Aug",
+    8: "Sep",
+    9: "Oct",
+    10: "Nov",
+    11: "Dec",
+  };
+
+  return months[month];
+};
+
+console.log(convertMonth(new Date("2011-01-25T18:44:36Z").getMonth()));
+
 // Returns fetch results for header of summary section
 const retrieveUserInfo = (info) => {
+  const day = new Date(info.created_at).getDate();
+  const month = new Date(info.created_at).getMonth();
+  const year = new Date(info.created_at).getFullYear();
+
   avatar.setAttribute(`src`, `${info.avatar_url}`);
   infoUsername.textContent = `${info.name}`;
   userHandle.setAttribute(`href`, `${info.html_url}`);
   userHandle.textContent = `@${info.login}`;
 
-  infoJoined.textContent = `Joined ${new Date(
-    `${info.created_at}`
-  ).toDateString()}`;
+  infoJoined.textContent = `Joined ${day} ${convertMonth(month)} ${year}`;
 };
 
 searchForm.addEventListener("submit", (evt) => {
