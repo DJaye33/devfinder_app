@@ -232,7 +232,8 @@ body {
 @media screen and (min-width: 924px) {
   .info__summary {
     margin-left: auto;
-    width: 48rem; } }
+    width: 48rem;
+    overflow: auto; } }
 .info__summary .info__text {
   font-size: 1.3rem;
   line-height: 2.5rem;

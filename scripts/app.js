@@ -13,13 +13,17 @@ const infoTitles = document.querySelectorAll(".info__titles");
 const infoResults = document.querySelectorAll(".info__results");
 const infoIcons = document.querySelectorAll(".info__icon");
 const infoLinks = document.querySelectorAll(".info__links");
-const avatar = document.querySelector(".info__avatar");
+const infoAvatar = document.querySelector(".info__avatar");
 const userHandle = document.querySelector(".info__user-handle");
+const repos = document.querySelector(".info__repos-result");
+const followers = document.querySelector(".info__followers-result");
+const following = document.querySelector(".info__following-result");
+const infoLocation = document.querySelector(".info__location-link");
+const infoTwitter = document.querySelector(".info__twitter-link");
+const infoWeb = document.querySelector(".info__web-link");
+const infoCompany = document.querySelector(".info__company-link");
 
 let isDarkTheme = false;
-console.log(avatar);
-
-console.log(new Date("2011-01-25T18:44:36Z").getFullYear());
 
 // add/remove dark theme user stats section
 const statsDarkTheme = (elements, infoClass) => {
@@ -54,20 +58,29 @@ const convertMonth = (month) => {
   return months[month];
 };
 
-console.log(convertMonth(new Date("2011-01-25T18:44:36Z").getMonth()));
-
 // Returns fetch results for header of summary section
 const retrieveUserInfo = (info) => {
   const day = new Date(info.created_at).getDate();
   const month = new Date(info.created_at).getMonth();
   const year = new Date(info.created_at).getFullYear();
 
-  avatar.setAttribute(`src`, `${info.avatar_url}`);
+  // user info for summary header section
+  infoAvatar.setAttribute(`src`, `${info.avatar_url}`);
   infoUsername.textContent = `${info.name}`;
   userHandle.setAttribute(`href`, `${info.html_url}`);
   userHandle.textContent = `@${info.login}`;
-
   infoJoined.textContent = `Joined ${day} ${convertMonth(month)} ${year}`;
+  // user bio
+  infoText.textContent = `${info.bio}`;
+  // user stats
+  repos.textContent = `${info.public_repos}`;
+  followers.textContent = `${info.followers}`;
+  following.textContent = `${info.following}`;
+  // contact links
+  infoLocation.textContent = `${info.location}`;
+  infoTwitter.textContent = `${info.twitter_username}`;
+  infoWeb.textContent = `${info.blog}`;
+  infoCompany.textContent = `${info.company}`;
 };
 
 searchForm.addEventListener("submit", (evt) => {
