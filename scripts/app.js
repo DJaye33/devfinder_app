@@ -64,23 +64,25 @@ const retrieveUserInfo = (info) => {
   const month = new Date(info.created_at).getMonth();
   const year = new Date(info.created_at).getFullYear();
 
+  console.log(day);
+
   // user info for summary header section
-  infoAvatar.setAttribute(`src`, `${info.avatar_url}`);
-  infoUsername.textContent = `${info.name}`;
+  infoAvatar.setAttribute(
+    `src`,
+    `${info?.avatar_url ?? "https://picsum.photos/70/70"}`
+  );
+  infoUsername.textContent = `${info.name ?? "N/A"}`;
   userHandle.setAttribute(`href`, `${info.html_url}`);
-  userHandle.textContent = `@${info.login}`;
+  userHandle.textContent = `@${info.login ?? "N/A"}`;
   infoJoined.textContent = `Joined ${day} ${convertMonth(month)} ${year}`;
-  // user bio
-  infoText.textContent = `${info.bio}`;
-  // user stats
-  repos.textContent = `${info.public_repos}`;
-  followers.textContent = `${info.followers}`;
-  following.textContent = `${info.following}`;
-  // contact links
-  infoLocation.textContent = `${info.location}`;
-  infoTwitter.textContent = `${info.twitter_username}`;
-  infoWeb.textContent = `${info.blog}`;
-  infoCompany.textContent = `${info.company}`;
+  infoText.textContent = `${info.bio ?? "This profile has no bio"}`;
+  repos.textContent = `${info.public_repos ?? "N/A"}`;
+  followers.textContent = `${info.followers ?? "N/A"}`;
+  following.textContent = `${info.following ?? "N/A"}`;
+  infoLocation.textContent = `${info.location ?? "Not Available"}`;
+  infoTwitter.textContent = `${info.twitter_username ?? "Not Available"}`;
+  infoWeb.textContent = `${info.blog ?? "Not Available"}`;
+  infoCompany.textContent = `${info.company ?? "Not Available"}`;
 };
 
 searchForm.addEventListener("submit", (evt) => {
